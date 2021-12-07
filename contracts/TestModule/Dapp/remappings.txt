@@ -1,0 +1,4 @@
+@uniswap/=../../../node_modules/@uniswap/
+@openzeppelin/=../../../node_modules/@openzeppelin/
+contracts/=../../../contracts/
+ds-test/=lib/ds-test/src/

@@ -1,0 +1,4624 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/base/BlockTimestamp.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "9558ed78048252f933fde4b5320eb84c",
+      "sourceName": "contracts/base/BlockTimestamp.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "BlockTimestamp"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/base/ERC721Permit.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "e8a2e47b2503432f03fbdc64ee4f5a59",
+      "sourceName": "contracts/base/ERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "../libraries/ChainId.sol",
+        "../interfaces/external/IERC1271.sol",
+        "../interfaces/IERC721Permit.sol",
+        "./BlockTimestamp.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ERC721Permit"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1637315922029,
+      "contentHash": "3fa5b045af1067a925e02da647523224",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1637315920837,
+      "contentHash": "fc7c67d7b17cde979a685143a26b2bc8",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/ChainId.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "99798e248a42a68a14fb09975b97b07e",
+      "sourceName": "contracts/libraries/ChainId.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "ChainId"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/external/IERC1271.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "577ba89decfbc12cb4850de84ff1e5cd",
+      "sourceName": "contracts/interfaces/external/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IERC721Permit.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "a180ecb83c79f562300f1dac1da6063a",
+      "sourceName": "contracts/interfaces/IERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IERC721Permit"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1637315920921,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1637315923005,
+      "contentHash": "1607fe9cc333c6de30f5098d45061a0b",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1637315923049,
+      "contentHash": "7fe751b35ebe8466b56415cce55a7074",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1637315923041,
+      "contentHash": "889ec04fca4214581eef408fff230efa",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1637315923057,
+      "contentHash": "b00bb215c82f73f87e6fed90b74f67d6",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/introspection/ERC165.sol": {
+      "lastModificationDate": 1637315921157,
+      "contentHash": "674a2137d8125c497b9dc83b82235171",
+      "sourceName": "@openzeppelin/contracts/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1637315923281,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1637315920997,
+      "contentHash": "67da1a55369b7665b43457144add6761",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1637315920981,
+      "contentHash": "d35f59d1f5a637f1c9d80319c401c779",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1637315923309,
+      "contentHash": "0a0b5402f31b9b60fdb741918c57247f",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/introspection/IERC165.sol": {
+      "lastModificationDate": 1637315922885,
+      "contentHash": "253edeb099cfd6a3b0501d2620312e3e",
+      "sourceName": "@openzeppelin/contracts/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/Unipilot.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "31610df63b22fc135b446c02e2e3db14",
+      "sourceName": "contracts/Unipilot.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/Math.sol",
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "./base/ERC721Permit.sol",
+        "./base/PeripheryPayments.sol",
+        "./interfaces/IUnipilot.sol",
+        "./interfaces/IUnipilotTokenProxy.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Unipilot"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/math/Math.sol": {
+      "lastModificationDate": 1637315923201,
+      "contentHash": "1b2b41cf411fe29db7d5774de77e9d6d",
+      "sourceName": "@openzeppelin/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/base/PeripheryPayments.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "b367417d37e7c9ae1a775f1b5e350602",
+      "sourceName": "contracts/base/PeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IWETH9",
+        "PeripheryPayments"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUnipilot.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "c526c8a7b163531a7b6580ec6cd1ed87",
+      "sourceName": "contracts/interfaces/IUnipilot.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IExchangeManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IUnipilot"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUnipilotTokenProxy.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "46a461464f386bf22aec9f909e3c16fa",
+      "sourceName": "contracts/interfaces/IUnipilotTokenProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IUnipilotTokenProxy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1637502461103,
+      "contentHash": "f0616d1842da6584f8454c9b323d777f",
+      "sourceName": "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1637501863321,
+      "contentHash": "70ec621ea910798b6c590a0b402a5bb9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IExchangeManager.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "590413ac234ac874bb09d347407cba87",
+      "sourceName": "contracts/interfaces/IExchangeManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IExchangeManager"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/UnipilotFarm.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "2659698c6520e5f78cd724ae5f9f92ff",
+      "sourceName": "contracts/UnipilotFarm.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUnipilotFarm.sol",
+        "./interfaces/uniswap/IUniswapLiquidityManager.sol",
+        "./interfaces/IUnipilot.sol",
+        "@uniswap/v3-core/contracts/libraries/FullMath.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "./ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "UnipilotFarm"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUnipilotFarm.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "f2c3702db1dcb5f89e91829dcadb7453",
+      "sourceName": "contracts/interfaces/IUnipilotFarm.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IUnipilotFarm"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/uniswap/IUniswapLiquidityManager.sol": {
+      "lastModificationDate": 1638789340281,
+      "contentHash": "ba8dd236cf0955ce62a6ecc74408bbb3",
+      "sourceName": "contracts/interfaces/uniswap/IUniswapLiquidityManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IULMEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IUniswapLiquidityManager"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1637315918129,
+      "contentHash": "2249f1d495006bca342e9794c266d57e",
+      "sourceName": "@uniswap/v3-core/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1637498653261,
+      "contentHash": "f820d4ad7b31d38729f20fe1bda2d48f",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/ReentrancyGuard.sol": {
+      "lastModificationDate": 1638789340273,
+      "contentHash": "a65ed8fb2e8f7952ea14c47c3c4a207f",
+      "sourceName": "contracts/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/uniswap/IULMEvents.sol": {
+      "lastModificationDate": 1638789340281,
+      "contentHash": "9cfae1e57078c66970e0674da9f682aa",
+      "sourceName": "contracts/interfaces/uniswap/IULMEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IULMEvents"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/setupModules/setupFarm.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "6b9f7eecb4cd7a97b4b2c7794f41a46f",
+      "sourceName": "contracts/TestModule/setupModules/setupFarm.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../UnipilotFarm.sol",
+        "../../test/TestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "SetupUnipilotFarm"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/TestERC20.sol": {
+      "lastModificationDate": 1638789340281,
+      "contentHash": "ed02057abf0cd959cd0e502cc2443416",
+      "sourceName": "contracts/test/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/setupModules/setupTokens.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "bed1d28b425895c3bffc7d46c3769e5c",
+      "sourceName": "contracts/TestModule/setupModules/setupTokens.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../test/TestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "SetupTokens"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/src/DappMock.sol": {
+      "lastModificationDate": 1638270313535,
+      "contentHash": "8f27428c89afb3505e0abd28857e1832",
+      "sourceName": "contracts/TestModule/Dapp/src/DappMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "contracts/TestModule/setupModules/setupMock.sol",
+        "contracts/TestModule/setupModules/setupTokens.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DappMock"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/setupModules/setupMock.sol": {
+      "lastModificationDate": 1638857623408,
+      "contentHash": "c5edbe501cb1c78eeb18e491bd60dcfd",
+      "sourceName": "contracts/TestModule/setupModules/setupMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../test/TestERC20.sol",
+        "../../base/UniswapLiquidityManager.sol",
+        "../../Unipilot.sol",
+        "../../UniStrategy.sol",
+        "../../V3Oracle.sol",
+        "../../base/ULMState.sol",
+        "../../UnipilotFarm.sol",
+        "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
+        "@uniswap/v3-core/contracts/libraries/FullMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "MockUniswapV3Router",
+        "SetupMock"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/base/UniswapLiquidityManager.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "f450df5c1c386f9447ef6cc57fde98b3",
+      "sourceName": "contracts/base/UniswapLiquidityManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+        "../interfaces/IUniStrategy.sol",
+        "../interfaces/IUnipilot.sol",
+        "../interfaces/uniswap/IUniswapLiquidityManager.sol",
+        "../oracle/interfaces/IOracle.sol",
+        "../libraries/LiquidityReserves.sol",
+        "../libraries/FixedPoint128.sol",
+        "../libraries/SafeCast.sol",
+        "../libraries/LiquidityPositions.sol",
+        "../libraries/UserPositions.sol",
+        "./PeripheryPayments.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "UniswapLiquidityManager"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/UniStrategy.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "643d27c6774646b9d49d3aec9c2ea7c5",
+      "sourceName": "contracts/UniStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUnipilot.sol",
+        "./interfaces/IUniStrategy.sol",
+        "@uniswap/v3-core/contracts/libraries/TickMath.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "UniStrategy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/V3Oracle.sol": {
+      "lastModificationDate": 1637319663808,
+      "contentHash": "2c20fa5db639ab4ef6c4222fecfd0bb8",
+      "sourceName": "contracts/V3Oracle.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./oracle/libraries/SafeUint128.sol",
+        "./oracle/libraries/OracleLibrary.sol",
+        "./oracle/interfaces/IOracle.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "V3Oracle"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/base/ULMState.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "a705e6ded418a69ffd9fb26104be35d7",
+      "sourceName": "contracts/base/ULMState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/uniswap/IUniswapLiquidityManager.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "ULMState"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol": {
+      "lastModificationDate": 1637315892080,
+      "contentHash": "ffd42687b3db01d30c24213d961fcf9f",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
+      "lastModificationDate": 1637315918229,
+      "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Factory"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUniStrategy.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "d2845a42eb3b8b3ed4473926b1155254",
+      "sourceName": "contracts/interfaces/IUniStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IUniStrategy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/oracle/interfaces/IOracle.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "ee7ae89bd9504e49a983bfe9c559ffe9",
+      "sourceName": "contracts/oracle/interfaces/IOracle.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.5"
+      ],
+      "artifacts": [
+        "IOracle"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/LiquidityReserves.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "8e09586979ac3dd85c7d4e5d4c2bb061",
+      "sourceName": "contracts/libraries/LiquidityReserves.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PositionKey.sol",
+        "./LiquidityAmounts.sol",
+        "@uniswap/v3-core/contracts/libraries/TickMath.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityReserves"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/FixedPoint128.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "1298041826d8bf2a444d660fc3b6aebd",
+      "sourceName": "contracts/libraries/FixedPoint128.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint128"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/SafeCast.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "c89128b97d009587db99cae7763cfef0",
+      "sourceName": "contracts/libraries/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/LiquidityPositions.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "28f88eae963d9198a558cec7bede17bf",
+      "sourceName": "contracts/libraries/LiquidityPositions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PositionKey.sol",
+        "./LiquidityAmounts.sol",
+        "@uniswap/v3-core/contracts/libraries/TickMath.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "../interfaces/uniswap/IUniswapLiquidityManager.sol",
+        "./LiquidityReserves.sol",
+        "@uniswap/v3-core/contracts/libraries/LowGasSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityPositions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/UserPositions.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "15bb10ee1ee8a96fdab963289292d3cc",
+      "sourceName": "contracts/libraries/UserPositions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+        "@uniswap/v3-core/contracts/libraries/FullMath.sol",
+        "../interfaces/uniswap/IUniswapLiquidityManager.sol",
+        "./FixedPoint128.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UserPositions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/PositionKey.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "75d1e33f18d1694897fcca697b305049",
+      "sourceName": "contracts/libraries/PositionKey.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PositionKey"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/LiquidityAmounts.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "5b8b54accdc9fe573ebcf1c4caf70c45",
+      "sourceName": "contracts/libraries/LiquidityAmounts.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/libraries/FullMath.sol",
+        "@uniswap/v3-core/contracts/libraries/FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityAmounts"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/libraries/TickMath.sol": {
+      "lastModificationDate": 1637315919397,
+      "contentHash": "4f5ffb16fab77f864272409a7ba093f4",
+      "sourceName": "@uniswap/v3-core/contracts/libraries/TickMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
+      "lastModificationDate": 1637315918449,
+      "contentHash": "e6badd8268772b99e7ca397aff11a965",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./pool/IUniswapV3PoolImmutables.sol",
+        "./pool/IUniswapV3PoolState.sol",
+        "./pool/IUniswapV3PoolDerivedState.sol",
+        "./pool/IUniswapV3PoolActions.sol",
+        "./pool/IUniswapV3PoolOwnerActions.sol",
+        "./pool/IUniswapV3PoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Pool"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/libraries/FixedPoint96.sol": {
+      "lastModificationDate": 1637315918081,
+      "contentHash": "f3ab03d6bbfd7c6834ecd3fc311cb0e7",
+      "sourceName": "@uniswap/v3-core/contracts/libraries/FixedPoint96.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint96"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
+      "lastModificationDate": 1637315918801,
+      "contentHash": "e236e09a9d654fb2f20a6da5dba2bd2f",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolImmutables"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+      "lastModificationDate": 1637315918877,
+      "contentHash": "0488495ef9087b4513d3b43634035ef9",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolState"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
+      "lastModificationDate": 1637315918665,
+      "contentHash": "25b71180ec9f5132a158334971ee2ace",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolDerivedState"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+      "lastModificationDate": 1637315918605,
+      "contentHash": "83d338eb1394008c808a20ac7c5bab0c",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolActions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
+      "lastModificationDate": 1637315918825,
+      "contentHash": "1b06ecc79e75f836c446ccf286e671e4",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolOwnerActions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
+      "lastModificationDate": 1637315918745,
+      "contentHash": "05abb59ec113db1046f7dadc78bb297b",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolEvents"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/libraries/LowGasSafeMath.sol": {
+      "lastModificationDate": 1637315919021,
+      "contentHash": "ff4d506a22d90b314ab325b437ff7729",
+      "sourceName": "@uniswap/v3-core/contracts/libraries/LowGasSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "LowGasSafeMath"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/oracle/libraries/SafeUint128.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "f39b8a904617ca86ea3a6c9c599f59cd",
+      "sourceName": "contracts/oracle/libraries/SafeUint128.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SafeUint128"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/oracle/libraries/OracleLibrary.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "0f052ed3c9c0cf08f19ee045cd59257e",
+      "sourceName": "contracts/oracle/libraries/OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "@uniswap/v3-core/contracts/libraries/FullMath.sol",
+        "@uniswap/v3-core/contracts/libraries/TickMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleLibrary"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol": {
+      "lastModificationDate": 1637315892488,
+      "contentHash": "6cec4f6b237de21ad97bf32c19a2e0d8",
+      "sourceName": "@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PoolAddress"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
+      "lastModificationDate": 1637315918901,
+      "contentHash": "a8ba2d37b0107911ae0e3b0e123cbd83",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/src/DappFarm.sol": {
+      "lastModificationDate": 1638270325652,
+      "contentHash": "4f499aca1234da57958226f4dbfd3784",
+      "sourceName": "contracts/TestModule/Dapp/src/DappFarm.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "contracts/TestModule/setupModules/setupFarm.sol",
+        "contracts/TestModule/setupModules/setupMock.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DappFarm"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v3-periphery/contracts/interfaces/external/IWETH9.sol": {
+      "lastModificationDate": 1637315892156,
+      "contentHash": "b2db1bd28998866868200957d0d964c5",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/external/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/VisorPoC.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "45065f4b37d830602f4d3e277b44f744",
+      "sourceName": "contracts/TestModule/VisorPoC.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "../interfaces/IHyperVisor.sol",
+        "@uniswap/v3-periphery/contracts/interfaces/external/IWETH9.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "VisorPOC"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1637315919517,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IHyperVisor.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "1f8021eeec2efd3d3733408bd7667577",
+      "sourceName": "contracts/interfaces/IHyperVisor.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IHyperVisor"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1638516660030,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/popsicle-interfaces/IPopsicleV3Optimizer.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "9d9b95a719f980ce9a127c1bfa410da6",
+      "sourceName": "contracts/interfaces/popsicle-interfaces/IPopsicleV3Optimizer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IPopsicleV3Optimizer"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/lixir-interfaces/ILixirVault.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "8724574fbd1acee8ddeb9985ce76e679",
+      "sourceName": "contracts/interfaces/lixir-interfaces/ILixirVault.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILixirVaultToken.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "ILixirVault"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/lixir-interfaces/ILixirVaultToken.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "2a4ac54a3207e7cbde46e6b4cee657bb",
+      "sourceName": "contracts/interfaces/lixir-interfaces/ILixirVaultToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../external/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ILixirVaultToken"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/external/IERC20.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "b65b3f5a741189e36ec2db3e70aaf254",
+      "sourceName": "contracts/interfaces/external/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/external/IERC20Permit.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "39ad845c9adeb3e04e172ffe975a7ea8",
+      "sourceName": "contracts/interfaces/external/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/lixir-interfaces/ILixirVaultETH.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "4c18324d2b4ab0374272914fc16fdb6c",
+      "sourceName": "contracts/interfaces/lixir-interfaces/ILixirVaultETH.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILixirVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "ILixirVaultETH"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/lixir-interfaces/ILixirStrategy.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "a07013b9623dd03324aa96a12c0cd53d",
+      "sourceName": "contracts/interfaces/lixir-interfaces/ILixirStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILixirVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "ILixirStrategy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1637315921213,
+      "contentHash": "52659a61e7fb46afdc3d0f00c3a87da6",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/proxy/Initializable.sol": {
+      "lastModificationDate": 1637315923117,
+      "contentHash": "1efacd801320f8f9413700ddbcf00647",
+      "sourceName": "@openzeppelin/contracts/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.24 <0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/lixir-interfaces/EIP712.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "200369c170f3ed7bb362a3b4072f4245",
+      "sourceName": "contracts/interfaces/lixir-interfaces/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EIP712Initializable"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/uniswap/INonfungiblePositionManager.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "f2024b9a1aea4b1d48799817b462c58b",
+      "sourceName": "contracts/interfaces/uniswap/INonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "INonfungiblePositionManager"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol": {
+      "lastModificationDate": 1637315921233,
+      "contentHash": "1f7a6465c50e33bb5edd4c01be41f50b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/PilotToken.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "7f042d26046b847758cfd0533790abec",
+      "sourceName": "contracts/test/PilotToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "Pilot"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "2cfc43f72cc399c93e0fcfb7e6dd67fc",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/IndexFund.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "94808cbd87ddbe6501b4769f70287313",
+      "sourceName": "contracts/test/IndexFund.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "./interfaces/IERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IndexFund"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/interfaces/IERC20Burnable.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "44d8bb991c88dca1a1e7e95edc7370e0",
+      "sourceName": "contracts/test/interfaces/IERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IERC20Burnable"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1638789340281,
+      "contentHash": "e3e0e001db1dac8e29830718f39f1ecf",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/visor-interfaces/IHypervisor.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "ffd79dc774134f2c4aa1ae2bff043f23",
+      "sourceName": "contracts/interfaces/visor-interfaces/IHypervisor.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IHypervisor"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/external/IWETH9.sol": {
+      "lastModificationDate": 1638789340277,
+      "contentHash": "4d902ad411044ea6764d7db551b18191",
+      "sourceName": "contracts/interfaces/external/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/src/Dapp.t.sol": {
+      "lastModificationDate": 1638857294463,
+      "contentHash": "1dd75c0716394466168b9f647445bd72",
+      "sourceName": "contracts/TestModule/Dapp/src/Dapp.t.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DappMock.sol",
+        "../lib/ds-test/src/test.sol",
+        "./hevm.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DappTest"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1638796224353,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "contracts/TestModule/Dapp/lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.23"
+      ],
+      "artifacts": [
+        "DSTest"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/lib/ds-test/demo/demo.sol": {
+      "lastModificationDate": 1637493571435,
+      "contentHash": "06c63e9c41bd610dc11246cab6dc550c",
+      "sourceName": "contracts/TestModule/Dapp/lib/ds-test/demo/demo.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../src/test.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.23"
+      ],
+      "artifacts": [
+        "DemoTest",
+        "DemoTestWithSetUp"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1638444776866,
+      "contentHash": "77e7a67aa796d62581ab860a1c6a3a13",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/ILiquidityMigrator.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "d056683c2ee0eb88394e2fbbf9578fef",
+      "sourceName": "contracts/interfaces/ILiquidityMigrator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "ILiquidityMigrator"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1638444732421,
+      "contentHash": "1d4d8e255a202a54b00503590bd11e30",
+      "sourceName": "contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IUniswapV3Pool.sol": {
+      "lastModificationDate": 1638444732345,
+      "contentHash": "7bfcbf10bdc0cf8e72767e89b2560748",
+      "sourceName": "contracts/interfaces/IUniswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./pool/IUniswapV3PoolImmutables.sol",
+        "./pool/IUniswapV3PoolState.sol",
+        "./pool/IUniswapV3PoolDerivedState.sol",
+        "./pool/IUniswapV3PoolActions.sol",
+        "./pool/IUniswapV3PoolOwnerActions.sol",
+        "./pool/IUniswapV3PoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Pool"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
+      "lastModificationDate": 1638444732649,
+      "contentHash": "e236e09a9d654fb2f20a6da5dba2bd2f",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolImmutables"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+      "lastModificationDate": 1638444732653,
+      "contentHash": "0488495ef9087b4513d3b43634035ef9",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolState"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
+      "lastModificationDate": 1638444732649,
+      "contentHash": "25b71180ec9f5132a158334971ee2ace",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolDerivedState"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+      "lastModificationDate": 1638444732645,
+      "contentHash": "83d338eb1394008c808a20ac7c5bab0c",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolActions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
+      "lastModificationDate": 1638444732653,
+      "contentHash": "1b06ecc79e75f836c446ccf286e671e4",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolOwnerActions"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
+      "lastModificationDate": 1638444732649,
+      "contentHash": "05abb59ec113db1046f7dadc78bb297b",
+      "sourceName": "contracts/interfaces/pool/IUniswapV3PoolEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolEvents"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1638445873309,
+      "contentHash": "868ca4fd20afc648b46c54191891f6d6",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/visor-interfaces/IUniversalVault.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "64f025c570cdb251ffef94911a834226",
+      "sourceName": "contracts/interfaces/visor-interfaces/IUniversalVault.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IUniversalVault"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/interfaces/visor-interfaces/IVault.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "a8705afb7013a1276ba72a2633b97303",
+      "sourceName": "contracts/interfaces/visor-interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/LowGasSafeMath.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "ff4d506a22d90b314ab325b437ff7729",
+      "sourceName": "contracts/libraries/LowGasSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "LowGasSafeMath"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/libraries/Sqrt.sol": {
+      "lastModificationDate": 1637305709849,
+      "contentHash": "bf12112b1496ecfc7481654e28581424",
+      "sourceName": "contracts/libraries/Sqrt.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "Sqrt"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/interfaces/IERC20.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "cfb2884b4b56f7ed84e7f863400a3800",
+      "sourceName": "contracts/test/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/UnipilotTokenProxy.sol": {
+      "lastModificationDate": 1637501960289,
+      "contentHash": "0a482291a8d6aca20ed295409e10089a",
+      "sourceName": "contracts/test/UnipilotTokenProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC20.sol",
+        "./interfaces/IUnipilotTokenProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "UnipilotTokenProxy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/test/interfaces/IUnipilotTokenProxy.sol": {
+      "lastModificationDate": 1637305724122,
+      "contentHash": "46a461464f386bf22aec9f909e3c16fa",
+      "sourceName": "contracts/test/interfaces/IUnipilotTokenProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IUnipilotTokenProxy"
+      ]
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Trash/dumb-E2ESample.sol": {
+      "lastModificationDate": 1637754448045,
+      "contentHash": "5c24ca19cbcbc4e7cd6cab81270acb21",
+      "sourceName": "contracts/TestModule/Trash/dumb-E2ESample.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Trash/dumb-MockDappContract.sol": {
+      "lastModificationDate": 1637754440977,
+      "contentHash": "f8fd3ad6564fe478a333b948d5a52493",
+      "sourceName": "contracts/TestModule/Trash/dumb-MockDappContract.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/mnt/1ff4fb5e-c654-45d0-8052-98d6a5c9d5e7/Unipilot/unipilot-protocol-contract-v2/contracts/TestModule/Dapp/src/hevm.sol": {
+      "lastModificationDate": 1638796856697,
+      "contentHash": "7a83a3ccde548409ee6f262204f1a4fc",
+      "sourceName": "contracts/TestModule/Dapp/src/hevm.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../lib/ds-test/src/test.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Hevm"
+      ]
+    }
+  }
+}
